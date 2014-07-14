@@ -23,11 +23,9 @@ $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
 $REMOTE_REPO        = "git@github.com:spidadesign/legends.git";
 $BRANCH             = "development";
 
-print_r($_POST);
-echo "<br>".$LOCAL_REPO;
 if ( $_POST['payload'] ) {
   // Only respond to POST requests from Github
-  echo "there post";
+
   if( file_exists($LOCAL_REPO) ) {
 	  echo "localrepo exists";
     // If there is already a repo, just run a git pull to grab the latest changes
