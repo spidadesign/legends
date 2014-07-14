@@ -22,23 +22,24 @@ $LOCAL_REPO_NAME    = "legends";
 $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
 $REMOTE_REPO        = "git@github.com:spidadesign/legends.git";
 $BRANCH             = "development";
-
+echo "hello";
 if ( $_POST['payload'] ) {
   // Only respond to POST requests from Github
-
+  echo "there post";
   if( file_exists($LOCAL_REPO) ) {
-
+	  echo "localrepo exists";
     // If there is already a repo, just run a git pull to grab the latest changes
     shell_exec("cd {$LOCAL_REPO} && git pull");
 
     die("done " . mktime());
   } else {
-
+	  echo "shit don't exist";
     // If the repo does not exist, then clone it into the parent directory
     shell_exec("cd {$LOCAL_ROOT} && git clone {$REMOTE_REPO}");
 
     die("done " . mktime());
   }
 }
+
 
 ?>
