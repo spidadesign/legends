@@ -46,6 +46,9 @@
 	.es-carousel ul{
 		margin: auto !important;
 	}
+	.single-car-fleet .content ul{
+		margin-left: auto;
+	}
 	.single-car-fleet .content li{
 		list-style: none;
 	}
