@@ -17,7 +17,7 @@
 **/
 
 // Set Variables
-$LOCAL_ROOT         = "/home/ftpvirt/spidadesign1/spidadesign.us/legends";
+$LOCAL_ROOT         = "/home/ftpvirt/spidadesign1/spidadesign.us/";
 $LOCAL_REPO_NAME    = "legends";
 $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
 $REMOTE_REPO        = "git@github.com:spidadesign/legends.git";
