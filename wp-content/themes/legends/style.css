@@ -135,9 +135,7 @@ hr {
 	background: url(assets/img/fb-default.png) no-repeat center center;
 	margin: 0 10px;
 }
-#header #topnav > div.social a.fb:hover {
-	background: url(assets/img/sprite.png) no-repeat 0 -34px;
-}
+
 #header #topnav > div.social a {
 	background-size: 30px;
 	display: inline-block;
@@ -151,9 +149,7 @@ hr {
 #header #topnav > div.social a.tw {
 	background: url(assets/img/tw-hover.png) no-repeat center center;
 }
-#header #topnav > div.social a.tw:hover {
-	background: url(assets/img/sprite.png) no-repeat -33px -34px;
-}
+
 #header #logo-section #logo {
 	margin-top: 15px;
 }
