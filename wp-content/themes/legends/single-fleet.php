@@ -47,9 +47,11 @@
 		margin: auto !important;
 	}
 	.single-car-fleet .content li{
-		text-align:left;
+		list-style: none;
 	}
-
+	.single-car-fleet .content{
+		margin:auto;
+	}
 	@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape){
 	}
 	@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait){
