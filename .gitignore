@@ -25,3 +25,4 @@ xmlrpc.php
 
 wp-includes/*
 wp-admin/*
+wp-content/uploads/*
