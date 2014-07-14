@@ -23,6 +23,7 @@ $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
 $REMOTE_REPO        = "git@github.com:spidadesign/legends.git";
 $BRANCH             = "development";
 echo "hello";
+print_r($_POST);
 if ( $_POST['payload'] ) {
   // Only respond to POST requests from Github
   echo "there post";
