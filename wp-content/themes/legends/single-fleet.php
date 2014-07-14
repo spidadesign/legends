@@ -2,10 +2,6 @@
 	/* Template Name: Fleet */
 	get_header();
 ?>
-<style>
-
-
-</style>
 	<div id="pagebanner" class="clearfix banner">
 		<img src="http://www.spidadesign.us/legends/wp-content/themes/legends/assets/img/page-banner.jpg" alt="">
 		 <div class="bx-overlay">
