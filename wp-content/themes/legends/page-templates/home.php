@@ -53,7 +53,7 @@ $(document).ready(function(){
     	<div class="services row-fluid clearfix">
 			<div class="span4">
 				<div class="col">
-					<div class="coupan">
+					<div class="coupan make-reservation">
 						<span class="georg">make an</span><br>
 						Online<br>
 						Reservation<br>
