@@ -2569,7 +2569,7 @@ span.wpcf7-form-control-wrap {
 .clearfix.banner .bx-overlay img{
 	position: absolute;
 	top: 0;
-	right: 260px;
+	right: 0px;
 	width: 1400px;
 	height: 350px;
 }
