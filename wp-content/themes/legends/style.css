@@ -187,6 +187,8 @@ hr {
 .clearfix.banner {
 	text-align: center;
 	overflow: hidden;
+	max-width: 1400px;
+	margin: auto;
 }
 #slider {
 	position: relative;
