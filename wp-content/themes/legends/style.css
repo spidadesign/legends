@@ -2745,6 +2745,11 @@ a .single-car {
 			margin-left:0;
 		}
 	}
+	@media(max-width: 1920px){
+		.clearfix.banner .bx-overlay img{
+			right: 260px;
+		}
+	}
 .make-reservation{
 	padding-top: 28px;
 }
