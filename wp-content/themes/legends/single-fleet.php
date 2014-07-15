@@ -1,6 +1,9 @@
 <?php
 	/* Template Name: Fleet */
 	get_header();
+	$custom = get_post_custom(get_the_ID());
+	//echo "<pre>"; print_r($custom); echo "</pre>";
+
 ?>
 	<div id="pagebanner" class="clearfix banner">
 		<img src="http://www.spidadesign.us/legends/wp-content/themes/legends/assets/img/page-banner.jpg" alt="">
@@ -17,6 +20,11 @@
 			<span class="title">
 				<?php echo the_title(); ?>
 			</span>
+			<?php if($custom['book-vehicle'][0]): ?>
+				<a type="button" class="book-vehicle" href="<?php echo $custom['book-vehicle'][0] ?>" target="_blank">Book This Vehicle</a>
+			<?php else: ?>
+				<a type="button" class="book-vehicle phone" href="tel:+18885343637">Call 1-888-534-3637 To Reserve</a>
+			<?php endif; ?>
 			<?php
 				$images =& get_children( array (
 					'post_parent'    => $post->ID,

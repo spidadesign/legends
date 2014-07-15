@@ -2676,11 +2676,41 @@ a .single-car {
 	}
 
 /* Single Fleet */
-.back-to-fleet{
+	.back-to-fleet{
 		padding: 10px 20px 10px 20px;
 		color:#acacac;
 		background-color: #464646;
 		font-family: 'Montserrat', Helvetica, sans-serif;
+		font-size: 12px;
+		text-transform: uppercase;
+		border-radius: 2px;
+	}
+	a.back-to-fleet:hover{
+		text-decoration: none;
+		color:#fff;
+		background-color: #078bed;
+	}
+	.book-vehicle{
+		padding: 10px 20px 10px 20px;
+		display: block;
+		color:#fff;
+		background-color: #078bed;
+		width:125px;
+		text-align: center;
+		font-family: 'Montserrat', Helvetica, sans-serif;
+		font-size: 12px;
+		text-transform: uppercase;
+		border-radius: 2px;
+		margin:auto;
+		margin-top: 20px;
+		margin-bottom:20px;
+	}
+	a.book-vehicle.phone{
+		width: 212px;
+	}
+	a.book-vehicle:hover{
+		background-color: #fff;
+		text-decoration: none;
 	}
 	.single-car-fleet{
 		text-align: center;
