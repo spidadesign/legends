@@ -2579,7 +2579,9 @@ span.wpcf7-form-control-wrap {
 	right: 260px;
 }
 
-
+.make-reservation{
+	padding-top: 28px !important;
+}
 /*Fleet overview page*/
   .page-id-88 h2{
       margin: auto;
@@ -2750,6 +2752,8 @@ a .single-car {
 			right: 260px;
 		}
 	}
-.make-reservation{
-	padding-top: 28px;
+	@media(min-width: 1930px){
+		.clearfix.banner .bx-overlay img{
+			left: 585px;
+	}
 }
