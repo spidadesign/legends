@@ -66,7 +66,7 @@ $(function() {
 			init			= function() {
 				
 				// (not necessary) preloading the images here...
-				$items.add('<img src="images/ajax-loader.gif"/><img src="images/black.png"/>').imagesLoaded( function() {
+				$items.add('<img src="/legends/wp-content/themes/legends/images/ajax-loader.gif"/><img src="/legends/wp-content/themes/legends/images/black.png"/>').imagesLoaded( function() {
 					// add options
 					_addViewModes();
 					

@@ -2614,6 +2614,7 @@ a .single-car {
   color:#acacac;
   font-size: 18px;
   font-family: 'Montserrat', Helvetica, sans-serif;
+  text-align: center;
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 	.single-car{
@@ -2710,8 +2711,10 @@ a .single-car {
 	.rg-image-nav-prev, .rg-image-nav-next{
 		display:none;
 	}
-	.es-carousel ul{
-		margin: auto !important;
+	@media (min-width: 768px){
+		.es-carousel ul{
+			margin: auto !important;
+		}
 	}
 	.single-car-fleet .content ul{
 		margin-left: auto;
@@ -2735,5 +2738,8 @@ a .single-car {
 	@media only screen and (min-device-width : 320px) and (max-device-width : 568px){
 		.clearfix.banner{
 			margin-bottom: 20px;
+		}
+		.es-carousel ul{
+			margin-left:0;
 		}
 	}
