@@ -67,7 +67,7 @@ $(document).ready(function(){
 					<div class="col">
 						<div class="overwrap">
 							<div class="coupan online overflowhide">
-								<p>Mobile Apps</p>
+								<p class="mobile-box">Mobile Apps</p>
 								<a href="https://itunes.apple.com/us/app/legends-mobile/id662740430?mt=8" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/iphone.png">
 								</a>
