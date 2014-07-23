@@ -39,13 +39,13 @@ get_header(); ?>
         <div class=" nav widget">
           <?php wp_nav_menu( array('menu' => 'CustomerServicesMenu', 'container' => 'false', 'menu_class' => 'navi')); ?>
         </div>
-        <div class="services widget">
+        <a class="serv-link" target="_blank" href="https://reserve.legendslimousine.com/WebJobsApp/Job_FromTo.jsp"><div class="services widget">
           <div class="coupan"> <span class="georg">make an</span><br>
             Online<br>
             Reservation<br>
             <span class="georg">– or –</span><br>
             Get a Quote <img src="<?php echo get_template_directory_uri(); ?>/assets/img/limo.png" alt=""> </div>
-          <p class="text-center"><a class="more" target="_blank" href="https://reserve.legendslimousine.com/WebJobsApp/Job_FromTo.jsp">Click here</a></p>
+          </a>
         </div>
       </div>
       <div class="span7">

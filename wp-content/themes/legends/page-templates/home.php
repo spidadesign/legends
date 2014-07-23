@@ -53,12 +53,14 @@ $(document).ready(function(){
     	<div class="services row-fluid clearfix">
 			<div class="span4">
 				<div class="col">
+				<a class="serv-link" target="_blank" href="https://reserve.legendslimousine.com/WebJobsApp/Job_FromTo.jsp">
 					<div class="coupan make-reservation">
 						<span class="georg">make an</span><br>
 						Online<br>
 						Reservation<br>
 						<span class="georg">– or –</span><br>
 						Get a Quote <img src="<?php echo get_template_directory_uri(); ?>/assets/img/limo.png" alt=""> </div>
+						</a>
 					</div>
 				</div>
 				<div class="span4">

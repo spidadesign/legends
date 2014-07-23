@@ -2570,13 +2570,16 @@ span.wpcf7-form-control-wrap {
 	position: absolute;
 	top: 0;
 	right: 0px;
+	left:0;
 	width: 1400px;
 	height: 350px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .page-template-page-templatesservices-php .clearfix.banner .bx-overlay img{
 	width: 1400px;
 	height: 280px;
-	right: 260px;
+	/*right: 260px;*/
 }
 
 .make-reservation{
@@ -2783,7 +2786,7 @@ a .single-car {
 	}
 	@media(max-width: 1920px){
 		.clearfix.banner .bx-overlay img{
-			right: 260px;
+			/*right: 260px;*/
 		}
 	}
 	@media(min-width: 1930px){
@@ -2791,4 +2794,6 @@ a .single-car {
 			left: 585px;
 	}
 }
-	 
+a.serv-link:hover{
+	text-decoration: none;
+}

@@ -42,7 +42,6 @@
 	    </div>
 </script>
 	<?php wp_head(); ?>
-	
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.js"></script>
 </head>
 <body <?php body_class(); ?>>
@@ -56,11 +55,10 @@
                     <?php endif; ?>
                 </div>
             	<?php wp_nav_menu( array('menu' => 'TopNav', 'container' => 'false', 'menu_class' => 'navi')); ?>
-               
             </div>
             <div id="logo-section">
             	<div id="logo">
-            		<a href="<?php bloginfo( 'url' ); ?>">
+            		<a href="<?php echo site_url(); ?>">
             			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-new.png" alt="" class="img-responsive">
             		</a>
             	</div>
