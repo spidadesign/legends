@@ -2791,7 +2791,7 @@ a .single-car {
 	}
 	@media(min-width: 1930px){
 		.clearfix.banner .bx-overlay img{
-			left: 585px;
+			/*left: 585px;*/
 	}
 }
 a.serv-link:hover{
