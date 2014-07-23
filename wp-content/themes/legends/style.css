@@ -2803,3 +2803,6 @@ span.wpcf7-form-control-wrap input{
 p.mobile-box{
 	font-size: 16px;
 }
+.page-template-page-templateshome-php article td{
+	width:50%;
+}
