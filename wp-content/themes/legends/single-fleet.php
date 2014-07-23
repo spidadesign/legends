@@ -26,12 +26,18 @@
 				<a type="button" class="book-vehicle phone" href="tel:+18885343637">Call 1-888-534-3637 To Reserve</a>
 			<?php endif; ?>
 			<?php
-				$images =& get_children( array (
-					'post_parent'    => $post->ID,
-					'post_type'      => 'attachment',
-					'post_mime_type' => 'image'
-				));
-
+				//$stuff = get_post_galleries_images( $post->ID ); 
+				//echo "<pre>"; print_r($stuff); echo "</pre>";
+				$args = array (
+					'post_type'   => 'attachment',
+			        'numberposts' => -1,
+			        'post_parent' => $post->ID,
+			        'order' => 'ASC',
+			        'orderby' => 'menu_order',
+			        'post_mime_type' => 'image'
+					);
+				$images = get_posts( $args );
+				//echo "<pre>"; print_r($images); echo "</pre>";
 				if ( empty($images) ):
 					// no attachments here
 				else:
@@ -43,12 +49,13 @@
 						<div class="es-carousel-wrapper">
 							<div class="es-carousel">
 								<ul>
-									<?php foreach ( $images as $attachment_id => $attachment ): ?>
+									<?php foreach ( $images as $image ): ?>
+
 										<li>
 											<a href="#">
 												<?php
-													$imgSmall = wp_get_attachment_image_src( $attachment_id, 'thumbnail' );
-													$imgLarge = wp_get_attachment_image_src( $attachment_id, 'large' );
+													$imgSmall = wp_get_attachment_image_src( $image->ID, 'thumbnail' );
+													$imgLarge = wp_get_attachment_image_src( $image->ID, 'large' );
 													echo '<img src="'.$imgSmall[0].'" data-large="'.$imgLarge[0].'">';
 												?>
 											</a>
