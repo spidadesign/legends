@@ -2613,6 +2613,7 @@ span.wpcf7-form-control-wrap {
   }
   .single-car img{
    max-width: 280px;
+   display: block;
   }
 a .single-car {
   color:#acacac;
@@ -2736,7 +2737,7 @@ a .single-car {
 		border:none;
 	}
 	.rg-image img{
-		border-radius: 0;
+		border-radius: 35px;
 	}
 	.es-carousel-wrapper{
 		background: none;
@@ -2788,3 +2789,4 @@ a .single-car {
 			left: 585px;
 	}
 }
+	 

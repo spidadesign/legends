@@ -2,84 +2,7 @@
   /* Template Name: Fleet New */
   get_header();
 ?>
-<style>
-  /*.page-id-88 h2{
-      margin: auto;
-      max-width: 575px;
-  }
-  .fleet{
-    margin-top: 25px;
-    padding-top: 30px;
-  }
-  .fleet .row{
-    margin-left: 20px;
-    margin-left: 20px;
-    border-top: 1px solid;
-    padding-top: 30px;
-    margin-bottom: 20px;
-  }
-  .row.forget-me{
-    display:none;
-  }
-   a:hover .single-car{
-    color: #0092ff;
-  }
-  .single-car{
-    float:left;
-    width:30%;
-    padding-left: 10px;
-    padding-right: 10px;
-    display:inline-block;
-  }
-  .single-car img{
-   max-width: 280px;
-  }
-a .single-car {
-  color:#acacac;
-  font-size: 18px;
-  font-family: 'Montserrat', Helvetica, sans-serif;
-}
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-	.single-car{
-		float:none;
-		width:auto;
-		padding: 0;
-		display:block;
-	}
-	.fleet .row{
-		margin:auto;
-		border:none;
-		padding:0;
 
-	}
-	.fleet .content{
-		display:block;
-	}
-	.fleet{
-		text-align: center;
-	}
-}
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
-	.single-car{
-		float:none;
-		width:auto;
-		padding: 0;
-		display:block;
-	}
-	.fleet .row{
-		margin:auto;
-		border:none;
-		padding:0;
-
-	}
-	.fleet .content{
-		display:block;
-	}
-	.fleet{
-		text-align: center;
-	}
-}*/
-</style>
 <div class="clearfix banner">
   <?php
 
@@ -127,21 +50,20 @@ a .single-car {
         $count = 1;
         while ( $loop->have_posts() ) : $loop->the_post();
           $custom = get_post_custom(get_the_ID());
+          $image_url = gallery_first_image();
           if($count % 3 === 1):
         ?>
           </div><div class="row">
             <a href="<?php the_permalink(); ?>">
             <div class="single-car">
-            <!--<?php the_post_thumbnail(); ?>-->
-            <img src="http://www.spidadesign.us/legends/wp-content/uploads/2013/11/2013-lincoln-mkt-town-car-390x270.jpg">
+            <img src="<?php echo $image_url; ?>" alt="<?php the_title();?>" />
             <span class="content"><?php echo the_title(); ?></span>
           </div>
           </a>
       <?php else: ?>
          <a href="<?php the_permalink(); ?>">
             <div class="single-car">
-            <!--<?php the_post_thumbnail(); ?>-->
-            <img src="http://www.spidadesign.us/legends/wp-content/uploads/2013/11/2013-lincoln-mkt-town-car-390x270.jpg">
+            <img src="<?php echo $image_url; ?>" alt="<?php the_title();?>" />
             <span class="content"><?php echo the_title(); ?></span>
           </div>
           </a>
