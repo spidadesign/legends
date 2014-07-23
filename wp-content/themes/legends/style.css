@@ -2797,3 +2797,6 @@ a .single-car {
 a.serv-link:hover{
 	text-decoration: none;
 }
+span.wpcf7-form-control-wrap input{
+	margin: auto;
+}
