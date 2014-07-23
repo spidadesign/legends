@@ -2612,8 +2612,10 @@ span.wpcf7-form-control-wrap {
     display:inline-block;
   }
   .single-car img{
-   max-width: 280px;
-   display: block;
+ 	max-width: 280px;
+   	max-height:205px;
+   	display: block;
+   	margin: auto;
   }
 a .single-car {
   color:#acacac;
