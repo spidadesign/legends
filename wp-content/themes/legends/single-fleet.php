@@ -14,7 +14,7 @@
 </section>
 <section id="body">
 	<div class=" container relv">
-		<a type="button" class="back-to-fleet" href="<?php echo site_url();?>/fleets">Back to Fleet</a>
+		<a type="button" class="back-to-fleet" href="<?php echo site_url();?>/car-service-nyc/">Back to Fleet</a>
 		<hr>
 		<div class="single-car-fleet">
 			<span class="title">
