@@ -35,20 +35,21 @@ get_header(); ?>
 <section id="body" class="sevice-pages">
   <div class="container">
     <div class="row-fluid clearfix">
-      <div class="span3 sidebar">
+      <div class="span4 sidebar">
         <div class=" nav widget">
           <?php wp_nav_menu( array('menu' => 'ServicesMenu', 'container' => 'false', 'menu_class' => 'navi')); ?>
         </div>
         <div class="services widget">
+        <a target="_blank" href="https://reserve.legendslimousine.com/WebJobsApp/Job_FromTo.jsp">
           <div class="coupan"> <span class="georg">make an</span><br>
             Online<br>
             Reservation<br>
             <span class="georg">– or –</span><br>
             Get a Quote <img src="<?php echo get_template_directory_uri(); ?>/assets/img/limo.png" alt=""> </div>
-          <p class="text-center"><a class="more" target="_blank" href="https://reserve.legendslimousine.com/WebJobsApp/Job_FromTo.jsp">Click here</a></p>
+          </a>
         </div>
       </div>
-      <div class="span8">
+      <div class="span7">
         <article>
            <?php
 				$page_title = get_post_meta($post->ID, 'h2-title', $single = true);
