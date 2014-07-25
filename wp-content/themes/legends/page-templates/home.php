@@ -134,7 +134,7 @@ $(document).ready(function(){
 						</div>
 </div>
 					<div class="legend-right">
-						<a href="http://www.spidadesign.us/legends/car-service-baby-seats/" class="more" target="_blank">
+						<a href="http://www.spidadesign.us/legends/car-service-baby-seats/" class="more">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/baby-seat.png" >
 						</a>
 					</div>
