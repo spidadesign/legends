@@ -2776,6 +2776,9 @@ a .single-car {
 		.small-gallery img{
 			margin-left: auto;
 		}
+		a .single-car {
+			margin-bottom: 20px;
+}
 	}
 	@media only screen and (min-device-width : 320px) and (max-device-width : 568px){
 		.clearfix.banner{
@@ -2816,4 +2819,7 @@ p.mobile-box{
 }
 .textwidget a{
 	color: #fff;
+}
+.textwidget a:hover{
+	text-decoration: none;
 }
