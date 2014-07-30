@@ -46,7 +46,6 @@
       <?php
         $args = array('post_type'=>'fleet', 'posts_per_page' => -1);
         $loop = new WP_Query( $args );
-        //echo "<pre>"; print_r($loop); echo "</pre>";
         $count = 1;
         while ( $loop->have_posts() ) : $loop->the_post();
           $custom = get_post_custom(get_the_ID());

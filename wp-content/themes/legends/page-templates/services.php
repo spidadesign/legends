@@ -104,12 +104,11 @@ get_header(); ?>
                   <a class="more" href="<?php echo site_url(); ?>/fleets">learn more</a> </div>
                 <div class="pull-right img relv">
                   <?php /*?><span  class="off-slogn"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></span><?php */?>
-                  <?php
-												$car_img = get_the_post_thumbnail($page->ID, 'full');
-												if(!empty( $car_img )) {
-												 echo $car_img;
-												 }
-												 else { ?>
+                    <?php
+                        $car_img = gallery_first_image();
+                        if(!empty( $car_img )) {
+                         echo "<img src='{$car_img}'>";
+                         } else { ?>
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/car1.png" alt="">
                   <?php }?>
                 </div>

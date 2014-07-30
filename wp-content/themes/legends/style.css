@@ -2824,3 +2824,12 @@ p.mobile-box{
 .textwidget a:hover{
 	text-decoration: none;
 }
+.services.widget a:hover{
+	text-decoration: none;
+}
+.pull-right.img img, .pull-left.img img{
+	border-radius: 50px;
+}
+
+
+

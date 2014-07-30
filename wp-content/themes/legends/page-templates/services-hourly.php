@@ -41,12 +41,13 @@ get_header(); ?>
           <?php wp_nav_menu( array('menu' => 'ServicesMenu', 'container' => 'false', 'menu_class' => 'navi')); ?>
         </div>
         <div class="services widget">
+        <a target="_blank" href="https://reserve.legendslimousine.com/WebJobsApp/Job_FromTo.jsp">
           <div class="coupan"> <span class="georg">make an</span><br>
             Online<br>
             Reservation<br>
             <span class="georg">– or –</span><br>
             Get a Quote <img src="<?php echo get_template_directory_uri(); ?>/assets/img/limo.png" alt=""> </div>
-          <p class="text-center"><a class="more" target="_blank" href="https://reserve.legendslimousine.com/WebJobsApp/Job_FromTo.jsp">Click here</a></p>
+          </a>
         </div>
       </div>
       <div class="span7">
@@ -104,12 +105,11 @@ get_header(); ?>
                   <a class="more" href="<?php echo site_url(); ?>/fleets">learn more</a> </div>
                 <div class="pull-right img relv">
                   <?php /*?><span  class="off-slogn"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></span><?php */?>
-                  <?php
-												$car_img = get_the_post_thumbnail($page->ID, 'full');
-												if(!empty( $car_img )) {
-												 echo $car_img;
-												 }
-												 else { ?>
+                   <?php
+                        $car_img = gallery_first_image();
+                        if(!empty( $car_img )) {
+                         echo "<img src='{$car_img}'>";
+                         } else { ?>
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/car1.png" alt="">
                   <?php }?>
                 </div>
