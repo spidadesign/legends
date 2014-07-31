@@ -96,7 +96,7 @@
 												 else {}
 											?>
                   </span><br>
-                  <a class="more" href="<?php echo site_url(); ?>/fleets">learn more</a> </div>
+                  <a class="more" href="<?php the_permalink(); ?>">learn more</a> </div>
                 <div class="pull-right img relv">
                   <?php
                         $car_img = gallery_first_image();

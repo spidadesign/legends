@@ -101,7 +101,7 @@ get_header(); ?>
 												 else {}
 											?>
                   </span><br>
-                  <a class="more" href="<?php echo site_url(); ?>/fleets">learn more</a> </div>
+                  <a class="more" href="<?php the_permalink(); ?>">learn more</a> </div>
                 <div class="pull-right img relv">
                   <?php /*?><span  class="off-slogn"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></span><?php */?>
                     <?php
