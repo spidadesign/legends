@@ -16,6 +16,7 @@
 	<div class=" container relv">
 		<a type="button" class="back-to-fleet" href="<?php echo site_url();?>/car-service-nyc/">Back to Fleet</a>
 		<hr>
+		 <img class="wifi-enabled" src="<?php echo get_template_directory_uri(); ?>/assets/img/wifi-enabled.png">
 		<div class="single-car-fleet">
 			<span class="title">
 				<?php echo the_title(); ?>
@@ -26,8 +27,6 @@
 				<a type="button" class="book-vehicle phone" href="tel:+18885343637">Call 1-888-534-3637 To Reserve</a>
 			<?php endif; ?>
 			<?php
-				//$stuff = get_post_galleries_images( $post->ID ); 
-				//echo "<pre>"; print_r($stuff); echo "</pre>";
 				$args = array (
 					'post_type'   => 'attachment',
 			        'numberposts' => -1,
@@ -37,7 +36,6 @@
 			        'post_mime_type' => 'image'
 					);
 				$images = get_posts( $args );
-				//echo "<pre>"; print_r($images); echo "</pre>";
 				if ( empty($images) ):
 					// no attachments here
 				else:

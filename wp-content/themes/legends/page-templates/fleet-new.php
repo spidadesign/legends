@@ -39,6 +39,9 @@
         if(!empty( $page_title )):
       ?>
         <h2><?php echo $page_title ?></h2>
+        <div class="row">
+          <img class="wifi-enabled" src="<?php echo get_template_directory_uri(); ?>/assets/img/wifi-enabled.png">
+        </div>
       <?php endif; ?>
     </article>
     <div class="fleet">
@@ -56,7 +59,13 @@
             <a href="<?php the_permalink(); ?>">
             <div class="single-car">
             <img src="<?php echo $image_url; ?>" alt="<?php the_title();?>" />
-            <span class="content"><?php echo the_title(); ?></span>
+            <span class="content">
+              <span><?php echo the_title(); ?></span>
+              <?php if(get_field('has_wifi')): ?>
+               <img class="wifi-sm" src="<?php echo get_template_directory_uri(); ?>/assets/img/vifi.png">
+              <?php endif; ?>
+            </span>
+            
           </div>
           </a>
       <?php else: ?>
@@ -76,5 +85,8 @@
     </div>
   </div>
 </section>
-<script>$('.fleet-thumb a').click(function(){return false;});</script>
+<script>
+  $('.fleet-thumb a').click(function(){return false;});
+  //$('')
+</script>
 <?php get_footer(); ?>

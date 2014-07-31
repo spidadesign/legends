@@ -100,6 +100,12 @@ $(document).ready(function(){
 				<!-- start of coupon slider-->
 				<div class="legend-box"><!-- Legend-Box Starts -->
 				<div class="legend-left">
+						<img class="wifi-home" src="<?php echo get_template_directory_uri(); ?>/assets/img/wifi-home.png" >
+						<a href="http://www.spidadesign.us/legends/car-service-baby-seats/" class="more">
+							<img class="baby-home" src="<?php echo get_template_directory_uri(); ?>/assets/img/baby-home.png" >
+						</a>
+					</div>
+				<div class="legend-right">
 						<div class="rslides_container">
 							<ul class="rslides" id="slidertwo">
 							<?php
@@ -132,15 +138,7 @@ $(document).ready(function(){
 								<?php //echo do_shortcode('[coupon couponid="loop" category="Coupon Cat"  coupon_align="cctor_alignnone" name="Coupon Loop"]'); ?>
 							</ul>
 						</div>
-</div>
-					<div class="legend-right">
-						<a href="http://www.spidadesign.us/legends/car-service-baby-seats/" class="more">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/baby-seat.png" >
-						</a>
 					</div>
-
-
-
 				</div><!-- Legend-Box Ends -->
 				<!-- end of coupon slider-->
 				<div class="container main-text">

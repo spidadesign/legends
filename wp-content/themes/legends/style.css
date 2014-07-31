@@ -2122,7 +2122,7 @@ select.tinynav {
 
 	border-radius: 4px;
 }
-.legend-left {
+.legend-right {
   width:471px;
   height:223px;
   margin-top:-34px;
@@ -2592,7 +2592,6 @@ span.wpcf7-form-control-wrap {
       max-width: 575px;
   }
   .fleet{
-    margin-top: 25px;
     padding-top: 30px;
   }
   .fleet .row{
@@ -2831,5 +2830,32 @@ p.mobile-box{
 	border-radius: 50px;
 }
 
-
-
+.single-car img.wifi-sm{
+	margin-bottom: 0;
+	border-radius: 0;
+}
+.single-car .content span{
+	max-width: 225px;
+	float: left;
+}
+.wifi-enabled{
+	float: right;
+}
+@media (max-width: 980px){
+	.single-fleet .wifi-enabled{
+		display: block;
+		float: none;
+		margin: auto;
+	}
+}
+.wifi-home{
+	float: left;
+	margin-top: -2px;
+}
+.legend-left{
+	height: 206px;
+	padding-top: 17px;
+	width: 454px;
+	margin-right: 21px;
+	margin-left: 5px;
+}
