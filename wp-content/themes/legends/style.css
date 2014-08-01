@@ -2859,3 +2859,7 @@ p.mobile-box{
 	margin-right: 21px;
 	margin-left: 5px;
 }
+.page-template-page-templatescorporate-services-php .sidebar{
+	position: relative;
+	z-index: 3;
+}
