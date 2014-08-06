@@ -25,7 +25,27 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/tinynav.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.arctext.js"></script>
 	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/plugins/bxslider/jquery.bxslider.min.js"></script>
 	<script language="javascript" type="text/javascript">
+		//Single Fleet page
+		$('.vehicle').bxSlider({
+ 			 pagerCustom: '#bx-pager',
+ 			 controls: false
+		});
+		//Fleet overview page
+		if(sliderCount){
+		var vehicle;
+		var customPager;
+		for (var i = 0; i <= sliderCount; i++) {
+			vehicle = '#vehicle_'+i;
+			customPager = '#bx-pager_'+i;
+			$(vehicle).bxSlider({
+ 			 pagerCustom: customPager,
+ 			 controls: false
+			});
+		}
+	}
+
 		jQuery(function () {
 				jQuery('.sidebar .navi').tinyNav({
 					active: 'current_page_item',
@@ -35,7 +55,6 @@
 		var $word2		= $('#arc1-wrapper').find('h3').hide();
 		var $word3		= $('#arc2-wrapper').find('h3').hide();
 		var $word4		= $('#arc3-wrapper').find('h3').hide();
-		
 		google.load('webfont','1');
 		google.setOnLoadCallback(function() {
 			WebFont.load({
@@ -56,6 +75,7 @@
 			jQueryword3.show().arctext({radius: 108, dir: 1});
 			jQueryword4.show().arctext({radius: 108, dir: 1});
 		};
+
 	</script>
 	<?php wp_footer(); ?>
 </body>

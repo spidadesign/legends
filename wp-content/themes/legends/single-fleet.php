@@ -40,31 +40,27 @@
 					// no attachments here
 				else:
 				?>
-			<div class='small-gallery'>
-				<div id="rg-gallery" class="rg-gallery">
-					<div class="rg-thumbs">
-						<!-- Elastislide Carousel Thumbnail Viewer -->
-						<div class="es-carousel-wrapper">
-							<div class="es-carousel">
-								<ul>
-									<?php foreach ( $images as $image ): ?>
-
-										<li>
-											<a href="#">
-												<?php
-													$imgSmall = wp_get_attachment_image_src( $image->ID, 'thumbnail' );
-													$imgLarge = wp_get_attachment_image_src( $image->ID, 'large' );
-													echo '<img src="'.$imgSmall[0].'" data-large="'.$imgLarge[0].'">';
-												?>
-											</a>
-										</li>
-									<?php endforeach; ?>
-								</ul>
-							</div>
-						</div>
-						<!-- End Elastislide Carousel Thumbnail Viewer -->
-					</div><!-- rg-thumbs -->
-				</div><!-- rg-gallery -->
+				<div class='small-gallery'>
+					<ul class="vehicle">
+  					<?php foreach ( $images as $image ): ?>
+					<li>
+						<?php
+							$imgLarge = wp_get_attachment_image_src( $image->ID, 'large' );
+							echo '<img src="'.$imgLarge[0].'">';
+						?>
+					</li>
+				<?php endforeach; unset($image);?>
+			</ul>
+			<div id="bx-pager">
+				<?php
+					$pagerCount = 0;
+					foreach ( $images as $image ):
+				 	$imgSmall = wp_get_attachment_image_src( $image->ID, 'thumbnail' );
+				 ?>
+				 <a data-slide-index="<?php echo $pagerCount; ?>">
+				 	<img src="<?php echo $imgSmall[0];?>">
+				</a>
+				<?php $pagerCount++; endforeach; ?>
 			</div>
 			<div class="row content">
 				<?php the_content( ); ?>
@@ -73,7 +69,9 @@
 		<?php endif; ?>
 	</div>
 </section>
+<script>
 
+</script>
 <?php get_footer(); ?>
 
 
