@@ -2547,12 +2547,11 @@ span.wpcf7-form-control-wrap {
     max-width: 575px;
 }
 .fleet {
-    padding-top: 30px;
+    padding-top: 5px;
 }
 .fleet .row {
     margin-left: 20px;
     margin-left: 20px;
-    border-top: 1px solid;
     padding-top: 30px;
     margin-bottom: 20px;
 }
@@ -2795,9 +2794,7 @@ p.mobile-box {
     position: relative;
     z-index: 3;
 }
-.car-modal {
-    background-color: #000;
-}
+
 .car-modal .wifi-enabled {
     float: none;
     display: block;
@@ -2806,6 +2803,8 @@ p.mobile-box {
 .car-modal {
     left: auto;
     margin-left: auto;
+    max-width: 590px !important;
+     background-color: #000;
 }
 .car-modal .rg-image {
     text-align: center;
@@ -2836,6 +2835,13 @@ p.mobile-box {
 .modal-footer {
     color: #000;
 }
+.modal{
+    position: absolute;
+    top: 0% !important;
+    left: 42%;
+    margin-top: -70px;
+    margin-left: -200px;
+}
 @media (max-width: 767px) {
     
 }
@@ -2864,6 +2870,12 @@ p.mobile-box {
 	.car-modal {
         max-width: 300px;
         width: 300px;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: auto;
+        margin-left: auto;
+}
    }
   .bx-wrapper .bx-viewport li {
        width: auto !important;
@@ -2897,7 +2909,23 @@ p.mobile-box {
 		width: 50px;
 	}
 }
-
+/*iPhone landscape*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+    a .single-car{
+        clear:both;
+    }
+    .car-modal{
+        width: 500px !important;
+    }
+    .small-gallery .bx-viewport img {
+        max-width: 320px;
+        margin-right: 65px;
+        margin-left: 23px;
+    }
+    .single-car .content img.wifi-sm{
+        margin: 0 !important;
+    }
+}
 /*iPad Portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .single-car {
@@ -2923,4 +2951,7 @@ p.mobile-box {
 	.car-modal{
 		margin-left: 190px;
 	}
+}
+.modal-header{
+    border: none;
 }
