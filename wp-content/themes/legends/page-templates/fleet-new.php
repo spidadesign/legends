@@ -107,6 +107,11 @@
                   <span class="title"><?php the_title();?></span>
                   <img class="wifi-enabled" src="<?php echo get_template_directory_uri(); ?>/assets/img/wifi-enabled.png">
               </div>
+              <?php if($custom['book-vehicle'][0]): ?>
+                <a type="button" class="book-vehicle" href="<?php echo $custom['book-vehicle'][0] ?>" target="_blank">Book This Vehicle</a>
+              <?php else: ?>
+                <a type="button" class="book-vehicle phone" href="tel:+18885343637">Call 1-888-534-3637 To Reserve</a>
+              <?php endif; ?>
             </div>
             <div class="modal-body">
             <?php

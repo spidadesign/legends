@@ -2958,11 +2958,5 @@ p.mobile-box {
 @media (min-width:768px){
     .modal .small-gallery .bx-viewport img {
         max-width: 390px;
-
-    }
-    .modal  .small-gallery .bx-viewport li{
-        right: 484px;
-        margin-lefT: 45px;
-        margin-right: 45px;
     }
 }
