@@ -67,34 +67,33 @@
           $image_url = gallery_first_image();
           if($count % 3 === 1):
         ?>
-          </div><div class="row">
-            <a class="single-modal" href="#single-car-<?php echo $count ?>" data-toggle="modal" data-href="<?php echo get_permalink();?>">
-            <div class="single-car">
-            <img src="<?php echo $image_url; ?>" alt="<?php the_title(); ?>" />
-            <span class="content">
-               <?php if(get_field('has_wifi')): ?>
-                <span class="wifi-title"><?php echo the_title();?></span>
-               <img class="wifi-sm" src="<?php echo get_template_directory_uri(); ?>/assets/img/vifi.png">
-             <?php else: ?>
-              <span><?php echo the_title();?></span>
-              <?php endif; ?>
-            </span>
           </div>
+          <div class="row">
+            <a class="single-modal" href="#single-car-<?php echo $count ?>" data-toggle="modal" data-href="<?php echo get_permalink();?>">
+              <div class="single-car">
+                <img src="<?php echo $image_url; ?>" alt="<?php the_title(); ?>" />
+                <span class="content">
+                   <span><?php echo the_title();?></span>
+                    <?php if(get_field('has_wifi')): ?>
+                          <img class="wifi-sm" src="<?php echo get_template_directory_uri(); ?>/assets/img/vifi.png">
+                  <?php endif; ?>
+                  <span class="view-interior">View Interior and Details ></span>
+                </span>
+            </div>
           </a>
       <?php else: ?>
 
          <a class="single-modal" href="#single-car-<?php echo $count ?>" data-toggle="modal" data-href="<?php echo get_permalink();?>">
-            <div class="single-car">
-            <img src="<?php echo $image_url; ?>" alt="<?php the_title();?>" />
-            <span class="content">
-              <?php if(get_field('has_wifi')): ?>
-                <span class="wifi-title"><?php echo the_title();?></span>
-               <img class="wifi-sm" src="<?php echo get_template_directory_uri(); ?>/assets/img/vifi.png">
-             <?php else: ?>
-              <span><?php echo the_title();?></span>
-              <?php endif; ?>
-            </span>
-          </div>
+              <div class="single-car">
+                <img src="<?php echo $image_url; ?>" alt="<?php the_title(); ?>" />
+                <span class="content">
+                   <span><?php echo the_title();?></span>
+                    <?php if(get_field('has_wifi')): ?>
+                          <img class="wifi-sm" src="<?php echo get_template_directory_uri(); ?>/assets/img/vifi.png">
+                  <?php endif; ?>
+                  <span class="view-interior">View Interior and Details ></span>
+                </span>
+            </div>
           </a>
           <?php endif; ?>
 

@@ -41,7 +41,9 @@
 			customPager = '#bx-pager_'+i;
 			$(vehicle).bxSlider({
  			 pagerCustom: customPager,
- 			 controls: false
+ 			 controls: false,
+ 			 //slideWidth: 560,
+ 			 //mode: 'fade'
 			});
 		}
 	}
