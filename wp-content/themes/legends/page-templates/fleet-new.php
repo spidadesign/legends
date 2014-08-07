@@ -124,7 +124,7 @@
                     <li><img src="<?php echo $single_img->guid;?>" class="img-responsive"></li>
                   <?php endforeach; unset($single_img);?>
                 </ul>
-                <div id="bx-pager_<?php echo $sliderCount;?>">
+                <div id="bx-pager_<?php echo $sliderCount;?>" class="bx_pager_modal">
                   <?php
                     $pagerCount = 0;
                     foreach ( $single_img_gall as $single_img ):

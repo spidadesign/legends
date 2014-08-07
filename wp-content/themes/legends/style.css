@@ -2813,6 +2813,7 @@ p.mobile-box {
     height: auto;
     min-height: 550px;
     border-radius: 0 0 6px 6px;
+    font-size:16px;
 }
 .es-nav-prev, .es-nav-next {
     display: none !important;
@@ -3002,4 +3003,8 @@ p.mobile-box {
 }
 a.single-modal:hover .single-car{
     color:#acacac;
+}
+.small-slide-fleet img{
+    height: 60px;
+    width: 60px;
 }
